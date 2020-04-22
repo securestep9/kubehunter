@@ -1,0 +1,20 @@
+group: travis_latest
+language: python
+cache: pip
+python:
+    - "3.6"
+    - "3.7"
+    - "3.8"
+install:
+  - pip install -r requirements.txt
+  - pip install -r requirements-dev.txt
+before_script:
+  - make lint-check
+script:
+  - make test
+after_success:
+  -  bash <(curl -s https://codecov.io/bash)
+notifications:
+  email:
+    on_success: change
+    on_failure: always

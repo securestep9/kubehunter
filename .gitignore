@@ -1,0 +1,31 @@
+*.pyc
+.venv
+*aqua*
+venv/
+.vscode
+.coverage
+.idea
+
+# Distribution / packaging
+.Python
+env/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+*.spec
+.eggs
+
+# Directory Cache Files
+.DS_Store
+thumbs.db
+__pycache__
